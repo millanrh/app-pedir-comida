@@ -1,0 +1,58 @@
+@use "./../../../../../public/styles/variables.scss";
+
+#container{
+    height: 100px;
+    display: flex;
+    background-color: variables.$color-principal-claro;
+    border-radius: variables.$border-radius-chico;
+    overflow: hidden;
+    font-size: small;
+}
+
+#foto{
+    height: 100%;
+    width: 25%;
+    flex: 2;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    gap: 5px;
+    img{
+        height: 15px;
+        margin-bottom: 5px;
+        background-color: rgba(182, 255, 180);
+        border-radius: 50px;
+        &:first-child{
+            margin-left: 3px;            
+        }
+    }
+}
+
+#detalles{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+h4{
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: small;
+}
+
+ul li {
+    display: inline;
+    font-size: x-small;
+    &:not(:last-of-type)::after{
+        content: ",";
+        margin-left: -2px;
+    }
+}
+
+#precio{
+    text-align: end;
+    font-weight: bold;
+}
