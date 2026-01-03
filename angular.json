@@ -38,7 +38,8 @@
               "src/styles.scss"
             ],
             "scripts": [],            
-            "outputMode": "static"            
+            "outputMode": "static",
+            "baseHref": "/app-pedir-comida/"            
           },
           "configurations": {
             "production": {
@@ -103,6 +104,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
