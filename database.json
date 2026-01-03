@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pizzas",
+        "fotoUrl": "https://www.sortirambnens.com/wp-content/uploads/2019/02/pizza-de-peperoni.jpg",
+        "productos": []
+    },
+    {
+        "id": 2,
+        "nombre": "Hamburguesas",
+        "fotoUrl": "https://img.hogar.mapfre.es/wp-content/uploads/2018/09/hamburguesa-sencilla.jpg",
+        "productos": [
+            {
+                "id": 1,
+                "nombre":  "Hamburguesa con queso",
+                "precio": 0,
+                "esVegano": false,
+                "esCeliaco": false,
+                "ingredientes": ["Carne de ternero", "Pan Brioche", "Queso"],
+                "fotoUrl": "https://tse2.mm.bing.net/th/id/OIP.pmtE68DkxIScrUNXms-OyQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+            },
+            {
+                "id": 2,
+                "nombre":  "Hamburguesa especial",
+                "precio": 0,
+                "esVegano": false,
+                "esCeliaco": false,
+                "ingredientes": ["Carne de ternero", "Pan Brioche", "Queso", "Tomate", "Lechuga"],
+                "fotoUrl": "https://tse2.mm.bing.net/th/id/OIP.pmtE68DkxIScrUNXms-OyQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+            },
+            {
+                "id": 3,
+                "nombre":  "Hamburguesa vegana",
+                "precio": 0,
+                "esVegano": true,
+                "esCeliaco": false,
+                "ingredientes": ["Medallón a base de lentejas", "Pan Brioche", "Tomate"],
+                "fotoUrl": "https://tse2.mm.bing.net/th/id/OIP.pmtE68DkxIScrUNXms-OyQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+            },
+            {
+                "id": 4,
+                "nombre":  "Hamburguesa celiaca",
+                "precio": 0,
+                "esVegano": false,
+                "esCeliaco": true,
+                "ingredientes": ["Carne de ternera", "Pan libre de tacc", "Queso"],
+                "fotoUrl": "https://tse2.mm.bing.net/th/id/OIP.pmtE68DkxIScrUNXms-OyQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+            },
+            {
+                "id": 5,
+                "nombre":  "Hamburguesa americana",
+                "precio": 0,
+                "esVegano": false,
+                "esCeliaco": false,
+                "ingredientes": ["Carne de ternera", "Pan Brioche", "Queso", "Salsa secreta BBQ"],
+                "fotoUrl": "https://tse2.mm.bing.net/th/id/OIP.pmtE68DkxIScrUNXms-OyQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+            },
+            {
+                "id": 6,
+                "nombre":  "Medallón platero",
+                "precio": 0,
+                "esVegano": true,
+                "esCeliaco": true,
+                "ingredientes": ["Medallón a base de lentejas", "Tomate", "Lechuga"],
+                "fotoUrl": "https://tse2.mm.bing.net/th/id/OIP.pmtE68DkxIScrUNXms-OyQHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Postres",
+        "fotoUrl": "https://th.bing.com/th/id/OIP.tP65hZaBbGr9Rns04WnIDgHaE7?w=250&amp;h=180&amp;c=7&amp;r=0&amp;o=7&amp;pid=1.7&amp;rm=3",
+        "productos": []
+    },
+    {
+        "id": 4,
+        "nombre": "Bebidas",
+        "fotoUrl": "https://th.bing.com/th/id/OIP.QMtmZzCeFt-7tRCmr0Rd5AHaEK?w=273&amp;h=180&amp;c=7&amp;r=0&amp;o=7&amp;pid=1.7&amp;rm=3",
+        "productos": []
+    },
+    {
+        "id": 5,
+        "nombre": "Combos",
+        "fotoUrl": "https://th.bing.com/th?q=Foto+De+Super+Combos&amp;w=120&amp;h=120&amp;c=1&amp;rs=1&amp;qlt=70&amp;o=7&amp;cb=1&amp;pid=InlineBlock&amp;rm=3&amp;mkt=es-XL&amp;cc=VE&amp;setlang=es&amp;adlt=strict&amp;t=1&amp;mw=247",
+        "productos": []
+    },
+    {
+        "id": 6,
+        "nombre": "Recomendados",
+        "fotoUrl": "https://th.bing.com/th/id/OIP.gtIBxknLi9uYqkGY0awjlgHaHa?w=189&amp;h=187&amp;c=7&amp;r=0&amp;o=7&amp;pid=1.7&amp;rm=3",
+        "productos": []
+    }
+]
