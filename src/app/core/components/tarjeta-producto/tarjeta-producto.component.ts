@@ -6,7 +6,7 @@ import { Producto } from '../../interfaces/productos';
   selector: 'app-tarjeta-producto',
   imports: [CommonModule],
   templateUrl: './tarjeta-producto.component.html',
-  styleUrl: './tarjeta-producto.component.scss'
+  styleUrls: ['./tarjeta-producto.component.scss']
 })
 export class TarjetaProductoComponent {
 

@@ -5,8 +5,8 @@
         <ng-container *ngIf="productosCarrito()[i]">
         <div id="izq" [ngStyle]="{'background-image': 'url('+productosCarrito()[i].fotoUrl+')'}">
             <div>
-                <img *ngIf="productosCarrito()[i].esVegano" src="./assets/img/vegano.webp" alt="Apto vegano">
-                <img *ngIf="productosCarrito()[i].esCeliaco" src="./assets/img/celiaco.webp" alt="Apto celiaco">
+                <img *ngIf="productosCarrito()[i].esVegano" src="assets/img/vegano.webp" alt="Apto vegano">
+                <img *ngIf="productosCarrito()[i].esCeliaco" src="assets/img/celiaco.webp" alt="Apto celiaco">
             </div>
         </div>
         <div id="centro">
@@ -18,7 +18,7 @@
         </div>
         <div id="der">
             <button id="borrar" class="contenedor" (click)="eliminarProducto(producto.idProducto)">
-                <img src="./assets/img/borrar.webp" alt="">
+                <img src="assets/img/borrar.webp" alt="">
             </button>
             <p class="negrita">${{productosCarrito()[i].precio}}</p>
         </div>
@@ -45,7 +45,7 @@
         </div>
         <div>
             <a [routerLink]="['/perfil']" routerLinkActive="router-link-active">
-            <img id="boton-editar-direccion" src="./assets/img/lapizEditar.webp" alt="Editar">
+            <img id="boton-editar-direccion" src="assets/img/lapizEditar.webp" alt="Editar">
             </a>
         </div>        
     </div>

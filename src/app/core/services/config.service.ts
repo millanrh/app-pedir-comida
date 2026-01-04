@@ -1,16 +1,15 @@
 import { Injectable, signal, WritableSignal } from '@angular/core';
 import { Config } from '../interfaces/config';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ConfigService {
 
-  constructor() {
-    fetch('/assets/configuracion.json').then(res => {
-      res.json().then(resJson => {        
-        this.configuracion.set(resJson);
-      })
+  constructor(private http: HttpClient) {
+    this.http.get('assets/configuracion.json').toPromise().then(res => {
+      (res as Config) && this.configuracion.set(res as Config);
     })
    }
 

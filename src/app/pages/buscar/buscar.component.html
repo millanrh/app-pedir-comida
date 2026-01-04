@@ -1,17 +1,17 @@
 <section>
 <form #buscarForm="ngForm" (change)="buscar()">
 <div id="barra-busqueda">
-    <img src="./assets/img/lupa.svg" alt="Lupa">
+    <img src="assets/img/lupa.svg" alt="Lupa">
     <input type="text" name="texto" [(ngModel)]="parametrosBusqueda.texto">
 </div>
 <div id="filtros-container">
 <div class="apto-container">
-    <img src="./assets/img/celiaco.webp" alt="Apto celiaco">
+    <img src="assets/img/celiaco.webp" alt="Apto celiaco">
     <input type="checkbox" name="celiaco" id="celiaco" [(ngModel)]="parametrosBusqueda.aptoCeliaco">
     <span>Apto celíaco</span>
 </div>
 <div class="apto-container">
-    <img src="./assets/img/vegano.webp" alt="Apto vegano">
+    <img src="assets/img/vegano.webp" alt="Apto vegano">
     <input type="checkbox" name="vegano" id="vegano" [(ngModel)]="parametrosBusqueda.aptoVegano">
     <span>Apto vegano</span>
 </div>

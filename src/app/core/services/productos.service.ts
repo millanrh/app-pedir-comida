@@ -11,22 +11,22 @@ const DATA_STATE_KEY = makeStateKey<any>('DATABASE_JSON');
 })
 export class ProductosService {
 
-  private url = '/assets/database.json';  
+  private url = 'assets/database.json';  
   productos?: Object;  
 
   constructor(private http: HttpClient, private transferState: TransferState, @Inject(PLATFORM_ID) private platformId: Object) { }    
 
   async getByCategoria(id:number): Promise<Producto[]> {
-    const res = await fetch('/assets/database.json');
-    const resJson: Categoria[] = await res.json();
+    const res = await this.http.get('assets/database.json').toPromise();
+    const resJson: Categoria[] = await res as Categoria[];
     const productos = resJson.find(categoria => categoria.id === id)?.productos;
     if(productos) return productos;
     return [];
   }
 
   async getAll(): Promise<Producto[]> {
-    const res = await fetch('/assets/database.json');
-    const resJson:Categoria[] = await res.json();
+    const res = await this.http.get('assets/database.json').toPromise();
+    const resJson:Categoria[] = await res as Categoria[];
     let productos: Producto[] = [];
     resJson.forEach(categoria => {
       productos = [...productos, ...categoria.productos]
